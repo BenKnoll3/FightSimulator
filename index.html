@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FightSimulator</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>FightSimulator</h1>
+    </div>
+    <div class="fighter-models">
+        <img src="images/jared.png" height="300px" class="fighter1">
+        <img src="images/sean.png" height="300px" class="fighter2">
+    </div>
+    <div class="stats-fighter1">
+        <div class="wrestlingskill">
+            <H1>Wrestling Skill: </H1>
+            <button id="wre-drop" class="heightbutton" onclick="showDrop('wredrop-content')">Click me</button>
+            <div id="wredrop-content" class="dropdown-menu">
+                <button class="beginner" onclick="setBeginner(1, 'wre-drop'),hideDrop('wredrop-content')">Beginner</button>
+                <button class="intermediate" onclick="setIntermediate(1, 'wre-drop'),hideDrop('wredrop-content')">Intermediate</button>
+                <button class="expert" onclick="setExpert(1, 'wre-drop'),hideDrop('wredrop-content')">Expert</button>
+            </div>
+        </div>
+        <div class="strikingskill">
+            <H1>Striking Skill: </H1>
+            <button id="str-drop" class="heightbutton" onclick="showDrop('strdrop-content')">Click me</button>
+            <div id="strdrop-content" class="dropdown-menu">
+                <button class="beginner" onclick="setBeginner(2, 'str-drop'),hideDrop('strdrop-content')">Beginner</button>
+                <button class="intermediate" onclick="setIntermediate(2, 'str-drop'),hideDrop('strdrop-content')">Intermediate</button>
+                <button class="expert" onclick="setExpert(2, 'str-drop'),hideDrop('strdrop-content')">Expert</button>
+            </div>
+        </div>
+        <div class="grapplingskill">
+            <H1>Grappling Skill: </H1>
+            <button id="gra-drop" class="heightbutton" onclick="showDrop('gradrop-content')">Click me</button>
+            <div id="gradrop-content" class="dropdown-menu">
+                <button class="beginner" onclick="setBeginner(3, 'gra-drop'),hideDrop('gradrop-content')">Beginner</button>
+                <button class="intermediate" onclick="setIntermediate(3, 'gra-drop'),hideDrop('gradrop-content')">Intermediate</button>
+                <button class="expert" onclick="setExpert(3, 'gra-drop'),hideDrop('gradrop-content')">Expert</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stats-fighter2">
+    <div class="wrestlingskill">
+        <H1>Wrestling Skill: </H1>
+        <button id="wre2-drop" class="heightbutton" onclick="showDrop('wre2drop-content')">Click me</button>
+        <div id="wre2drop-content" class="dropdown-menu">
+            <button class="beginner" onclick="setBeginner(4, 'wre2-drop'),hideDrop('wre2drop-content')">Beginner</button>
+            <button class="intermediate" onclick="setIntermediate(4, 'wre2-drop'),hideDrop('wre2drop-content')">Intermediate</button>
+            <button class="expert" onclick="setExpert(4, 'wre2-drop'),hideDrop('wre2drop-content')">Expert</button>
+        </div>
+    </div>
+    <div class="strikingskill">
+        <H1>Striking Skill: </H1>
+        <button id="str2-drop" class="heightbutton" onclick="showDrop('str2drop-content')">Click me</button>
+        <div id="str2drop-content" class="dropdown-menu">
+            <button class="beginner" onclick="setBeginner(5, 'str2-drop'),hideDrop('str2drop-content')">Beginner</button>
+            <button class="intermediate" onclick="setIntermediate(5, 'str2-drop'),hideDrop('str2drop-content')">Intermediate</button>
+            <button class="expert" onclick="setExpert(5, 'str2-drop'),hideDrop('str2drop-content')">Expert</button>
+        </div>
+    </div>
+    <div class="grapplingskill">
+        <H1>Grappling Skill: </H1>
+        <button id="gra2-drop" class="heightbutton" onclick="showDrop('gra2drop-content')">Click me</button>
+        <div id="gra2drop-content" class="dropdown-menu">
+            <button class="beginner" onclick="setBeginner(6, 'gra2-drop'),hideDrop('gra2drop-content')">Beginner</button>
+            <button class="intermediate" onclick="setIntermediate(6, 'gra2-drop'),hideDrop('gra2drop-content')">Intermediate</button>
+            <button class="expert" onclick="setExpert(6, 'gra2-drop'),hideDrop('gra2drop-content')">Expert</button>
+        </div>
+    </div>
+</div>
+<div class="fightButton">
+    <button onclick="faceOff()">FIGHT!</button>
+</div>
+    <script src="logic.js"></script>
+</body>
+</html>

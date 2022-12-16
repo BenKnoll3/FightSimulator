@@ -1,0 +1,67 @@
+body {
+    background-color: #7b7b7b;
+}
+
+.navbar {
+    width: 100%;
+    height:50px;
+    color:black;
+}
+
+.fighter-models {
+    width: 100%;
+    height: 400px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+
+.stats-fighter1 {
+    width: 50%;
+    height: 300px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stats-fighter2 {
+    width: 50%;
+    height: 300px;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body button {
+    background-color: #6f8cbf;
+}
+ 
+.heightbutton:hover {
+    background-color:aliceblue;
+}
+
+.wrestlingskill {
+    position: relative;
+    display:inline-block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+
+}
+
+.show {display:block;}
+
+.hide {display: none;}
+
+.fightButton {
+    display:block;
+    height: 30px;
+    width: 50px;
+    margin: 0 auto;
+}
