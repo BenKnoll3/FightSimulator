@@ -39,11 +39,11 @@ body button {
     background-color: #6f8cbf;
 }
  
-.heightbutton:hover {
+.dropbutton:hover {
     background-color:aliceblue;
 }
 
-.wrestlingskill {
+.height {
     position: relative;
     display:inline-block;
 }
@@ -55,9 +55,14 @@ body button {
 
 }
 
+.hognosey {
+    display:none;
+    padding-top: -300px;
+}
+
 .show {display:block;}
 
-.hide {display: none;}
+.hide {display:none;}
 
 .fightButton {
     display:block;
@@ -65,3 +70,4 @@ body button {
     width: 50px;
     margin: 0 auto;
 }
+
