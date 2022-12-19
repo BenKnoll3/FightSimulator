@@ -1,73 +1,115 @@
 body {
-    background-color: #7b7b7b;
+    background-color:#4b4b4b;
 }
 
 .navbar {
     width: 100%;
     height:50px;
-    color:black;
+    color:#f1f1f1;
 }
 
 .fighter-models {
-    width: 100%;
-    height: 400px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding-top: 30px;
+
+    display: grid;
+    grid-template-areas: ". p1 . p2 .";
+
+}
+
+.fighter1 {
+    grid-area: p1;
+    place-self: center;
+}
+
+.fighter2 {
+    grid-area:p2;
+    place-self: center;
+}
+
+.hognose {
+    grid-area:p1;
+    align-self: center;
+    display: none;
+}
+
+body H1 {
+    color: #050505;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* trait starts here */
+.namebox {
+    width:140px;
+}
+
+.trait-labels1 {
+    order:0;
+}
+
+.trait-labels2 {
+    order:2;
 }
 
 .stats-fighter1 {
-    width: 50%;
-    height: 300px;
-    float: left;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    order: 1;
 }
 
 .stats-fighter2 {
-    width: 50%;
-    height: 300px;
-    float: right;
+    width: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    order: 3;
 }
 
 body button {
-    background-color: #6f8cbf;
+    background-color: #4b4b4b;
+    width: 80px;
+    color:#f1f1f1;
 }
  
-.dropbutton:hover {
-    background-color:aliceblue;
-}
-
-.height {
-    position: relative;
-    display:inline-block;
+body button:hover {
+    background-color: #384342;
+    width:100px;
 }
 
 .dropdown-menu {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-
 }
-
-.hognosey {
-    display:none;
-    padding-top: -300px;
-}
-
-.show {display:block;}
-
-.hide {display:none;}
 
 .fightButton {
     display:block;
     height: 30px;
     width: 50px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
+.winner {
+    display:block;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.trait {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:100px;
+}
+
+/* for js methods */
+
+.show {
+    display:flex;
+    flex-direction: column;
+}
+
+.hide {display:none;}

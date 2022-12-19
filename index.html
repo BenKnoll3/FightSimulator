@@ -12,130 +12,142 @@
         <h1>FightSimulator</h1>
     </div>
     <div class="fighter-models">
-        <img src="images/jared.png" height="300px" class="fighter1">
-        <img src="images/sean.png" height="300px" class="fighter2">
+        <img src="images/jared.png" height="300px" class="fighter1" >
+        <img src="images/sean.png" height="300px" class="fighter2" >
+        <img id="hognoser" src="images/hognose.png" height="20px" width="20px" class="hognose">
     </div>
-    <div class="items">
-        <img id="hognoser" src="images/hognose.png" height="20px" width="20px" class="hognosey">
-    </div>
-    <div class="stats-fighter2">
-        <div class="height2">
+    <div class="trait">
+        <div class="trait-labels1">
+            <H1>Name</H1>
             <H1>Height</H1>
-            <button id="hei2-drop" class="dropbutton" onclick="showDrop('hei2drop-content')">Click me</button>
-            <div id="hei2drop-content" class="dropdown-menu">
-                <button onclick="setPlayer2(2, 'hei2-drop', 'Ankle Biter', 1),hideDrop('hei2drop-content')">Ankle Biter</button>
-                <button onclick="setPlayer2(4, 'hei2-drop', 'Small Fry', 1),hideDrop('hei2drop-content')">Small Fry</button>
-                <button onclick="setPlayer2(6, 'hei2-drop', 'Average', 1),hideDrop('hei2drop-content')">Average</button>
-                <button onclick="setPlayer2(8, 'hei2-drop', 'Giant', 1),hideDrop('hei2drop-content')">Giant</button>
-                <button onclick="setPlayer2(10, 'hei2-drop', 'Behemoth', 1),hideDrop('hei2drop-content')">Behemoth</button>
-            </div>
-        </div>
-        <div class="build2">
             <H1>Body Type</H1>
-            <button id="bui2-drop" class="dropbutton" onclick="showDrop('bui2drop-content')">Click me</button>
-            <div id="bui2drop-content" class="dropdown-menu">
-                <button onclick="setPlayer2(2, 'bui2-drop', 'Skeleton', 2),hideDrop('bui2drop-content')">Skeleton</button>
-                <button onclick="setPlayer2(4, 'bui2-drop', 'Dad Bod', 2),hideDrop('bui2drop-content')">Dad Bod</button>
-                <button onclick="setPlayer2(6, 'bui2-drop', 'Fit', 2),hideDrop('bui2drop-content')">Fit</button>
-                <button onclick="setPlayer2(8, 'bui2-drop', 'Massive', 2),hideDrop('bui2drop-content')">Massive</button>
-                <button onclick="setPlayer2(10, 'bui2-drop', 'Juiced Hog', 2),hideDrop('bui2drop-content')">Juiced Hog</button>
-            </div>
-        </div>
-        <div class="power2">
             <H1>Striking Power</H1>
-            <button id="pow2-drop" class="dropbutton" onclick="showDrop('pow2drop-content')">Click me</button>
-            <div id="pow2drop-content" class="dropdown-menu">
-                <button onclick="setPlayer2(2, 'pow2-drop', 'Pool Noodle', 3),hideDrop('pow2drop-content')">Pool Noodle</button>
-                <button onclick="setPlayer2(4, 'pow2-drop', 'Razer Scooter', 3),hideDrop('pow2drop-content')">Razer Scooter</button>
-                <button onclick="setPlayer2(6, 'pow2-drop', 'Average', 3),hideDrop('pow2drop-content')">Average</button>
-                <button onclick="setPlayer2(8, 'pow2-drop', 'Ford F350', 3),hideDrop('pow2drop-content')">Ford F350</button>
-                <button onclick="setPlayer2(10, 'pow2-drop', 'Thanos Snap', 3),hideDrop('pow2drop-content')">Thanos Snap</button>
-            </div>
-        </div>
-        <div class="chin2">
             <H1>Chin Material</H1>
-            <button id="chi2-drop" class="dropbutton" onclick="showDrop('chi2drop-content')">Click me</button>
-            <div id="chi2drop-content" class="dropdown-menu">
-                <button onclick="setPlayer2(2, 'chi2-drop', 'Glass', 4),hideDrop('chi2drop-content')">Glass</button>
-                <button onclick="setPlayer2(4, 'chi2-drop', 'CardBoard', 4),hideDrop('chi2drop-content')">CardBoard</button>
-                <button onclick="setPlayer2(6, 'chi2-drop', 'Wood', 4),hideDrop('chi2drop-content')">Wood</button>
-                <button onclick="setPlayer2(8, 'chi2-drop', 'Steel', 4),hideDrop('chi2drop-content')">Steel</button>
-                <button onclick="setPlayer2(10, 'chi2-drop', 'Crimson chin', 4),hideDrop('chi2drop-content')">Crimson Chin</button>
+            <H1>Submission Threat</H1>        
+        </div>
+        <div class="trait-labels2">
+            <H1>Name</H1>            
+            <H1>Height</H1>
+            <H1>Body Type</H1>
+            <H1>Striking Power</H1>
+            <H1>Chin Material</H1>
+            <H1>Submission Threat</H1>        
+        </div>
+        <div class="stats-fighter2">
+            <div>
+                <input type="text" id="f2name" class="namebox">
+            </div>
+            <div class="droppermenu">
+                <button id="hei2-drop" class="dropbutton" onclick="showDrop('hei2drop-content')">Click me</button>
+                <div id="hei2drop-content" class="dropdown-menu">
+                    <button onclick="setPlayer2(2, 'hei2-drop', 'Ankle Biter', 1),hideDrop('hei2drop-content')">Ankle Biter</button>
+                    <button onclick="setPlayer2(4, 'hei2-drop', 'Small Fry', 1),hideDrop('hei2drop-content')">Small Fry</button>
+                    <button onclick="setPlayer2(6, 'hei2-drop', 'Average', 1),hideDrop('hei2drop-content')">Average</button>
+                    <button onclick="setPlayer2(8, 'hei2-drop', 'Giant', 1),hideDrop('hei2drop-content')">Giant</button>
+                    <button onclick="setPlayer2(10, 'hei2-drop', 'Behemoth', 1),hideDrop('hei2drop-content')">Behemoth</button>
+                </div>
+            </div>
+            <div class="droppermenu">
+                <button id="bui2-drop" class="dropbutton" onclick="showDrop('bui2drop-content')">Click me</button>
+                <div id="bui2drop-content" class="dropdown-menu">
+                    <button onclick="setPlayer2(2, 'bui2-drop', 'Skeleton', 2),hideDrop('bui2drop-content')">Skeleton</button>
+                    <button onclick="setPlayer2(4, 'bui2-drop', 'Dad Bod', 2),hideDrop('bui2drop-content')">Dad Bod</button>
+                    <button onclick="setPlayer2(6, 'bui2-drop', 'Fit', 2),hideDrop('bui2drop-content')">Fit</button>
+                    <button onclick="setPlayer2(8, 'bui2-drop', 'Massive', 2),hideDrop('bui2drop-content')">Massive</button>
+                    <button onclick="setPlayer2(10, 'bui2-drop', 'Juiced Hog', 2),hideDrop('bui2drop-content')">Juiced Hog</button>
+                </div>
+            </div>
+            <div class="droppermenu">
+                <button id="pow2-drop" class="dropbutton" onclick="showDrop('pow2drop-content')">Click me</button>
+                <div id="pow2drop-content" class="dropdown-menu">
+                    <button onclick="setPlayer2(2, 'pow2-drop', 'Pool Noodle', 3),hideDrop('pow2drop-content')">Pool Noodle</button>
+                    <button onclick="setPlayer2(4, 'pow2-drop', 'Razer Scooter', 3),hideDrop('pow2drop-content')">Razer Scooter</button>
+                    <button onclick="setPlayer2(6, 'pow2-drop', 'Average', 3),hideDrop('pow2drop-content')">Average</button>
+                    <button onclick="setPlayer2(8, 'pow2-drop', 'Ford F350', 3),hideDrop('pow2drop-content')">Ford F350</button>
+                    <button onclick="setPlayer2(10, 'pow2-drop', 'Thanos Snap', 3),hideDrop('pow2drop-content')">Thanos Snap</button>
+                </div>
+            </div>
+            <div class="droppermenu">
+                <button id="chi2-drop" class="dropbutton" onclick="showDrop('chi2drop-content')">Click me</button>
+                <div id="chi2drop-content" class="dropdown-menu">
+                    <button onclick="setPlayer2(2, 'chi2-drop', 'Glass', 4),hideDrop('chi2drop-content')">Glass</button>
+                    <button onclick="setPlayer2(4, 'chi2-drop', 'CardBoard', 4),hideDrop('chi2drop-content')">CardBoard</button>
+                    <button onclick="setPlayer2(6, 'chi2-drop', 'Wood', 4),hideDrop('chi2drop-content')">Wood</button>
+                    <button onclick="setPlayer2(8, 'chi2-drop', 'Steel', 4),hideDrop('chi2drop-content')">Steel</button>
+                    <button onclick="setPlayer2(10, 'chi2-drop', 'Crimson chin', 4),hideDrop('chi2drop-content')">Crimson Chin</button>
+                </div>
+            </div>
+            <div class="droppermenu">
+                <button id="sub2-drop" class="dropbutton" onclick="showDrop('sub2drop-content')">Click me</button>
+                <div id="sub2drop-content" class="dropdown-menu">
+                    <button onclick="setPlayer2(2, 'sub2-drop', 'T-rex Limbs', 5),hideDrop('sub2drop-content')">T-rex Limbs</button>
+                    <button onclick="setPlayer2(4, 'sub2-drop', 'Watches Joe Rogan', 5),hideDrop('sub2drop-content')">Watches Joe Rogan</button>
+                    <button onclick="setPlayer2(6, 'sub2-drop', 'Ankle Snapper', 5),hideDrop('sub2drop-content')">Ankle Snapper</button>
+                    <button onclick="setPlayer2(8, 'sub2-drop', 'Monkey Backpack', 5),hideDrop('sub2drop-content')">Monkey Backpack</button>
+                    <button onclick="setPlayer2(10, 'sub2-drop', 'Mom From Incredibles', 5),hideDrop('sub2drop-content')">Mom From Incredibles</button>
+                </div>
             </div>
         </div>
-        <div class="submission2">
-            <H1>Submission Threat</H1>
-            <button id="sub2-drop" class="dropbutton" onclick="showDrop('sub2drop-content')">Click me</button>
-            <div id="sub2drop-content" class="dropdown-menu">
-                <button onclick="setPlayer2(2, 'sub2-drop', 'T-rex Limbs', 5),hideDrop('sub2drop-content')">T-rex Limbs</button>
-                <button onclick="setPlayer2(4, 'sub2-drop', 'Watches Joe Rogan', 5),hideDrop('sub2drop-content')">Watches Joe Rogan</button>
-                <button onclick="setPlayer2(6, 'sub2-drop', 'Ankle Snapper', 5),hideDrop('sub2drop-content')">Ankle Snapper</button>
-                <button onclick="setPlayer2(8, 'sub2-drop', 'Monkey Backpack', 5),hideDrop('sub2drop-content')">Monkey Backpack</button>
-                <button onclick="setPlayer2(10, 'sub2-drop', 'Mom From Incredibles', 5),hideDrop('sub2drop-content')">Mom From Incredibles</button>
+     <div class="stats-fighter1">
+        <div>
+            <input type="text" id="f1name" class="namebox">
+        </div>
+        <div class="droppermenu">
+            <button id="hei-drop" class="dropbutton" onclick="showDrop('heidrop-content')">Click me</button>
+            <div id="heidrop-content" class="dropdown-menu">
+                <button onclick="setPlayer1(2, 'hei-drop', 'Ankle Biter', 1),hideDrop('heidrop-content')">Ankle Biter</button>
+                <button onclick="setPlayer1(4, 'hei-drop', 'Small Fry', 1),hideDrop('heidrop-content')">Small Fry</button>
+                <button onclick="setPlayer1(6, 'hei-drop', 'Average', 1),hideDrop('heidrop-content')">Average</button>
+                <button onclick="setPlayer1(8, 'hei-drop', 'Giant', 1),hideDrop('heidrop-content')">Giant</button>
+                <button onclick="setPlayer1(10, 'hei-drop', 'Behemoth', 1),hideDrop('heidrop-content')">Behemoth</button>
             </div>
         </div>
-    </div>
-</div>
-<div class="stats-fighter2">
-    <div class="height">
-        <H1>Height</H1>
-        <button id="hei-drop" class="dropbutton" onclick="showDrop('heidrop-content')">Click me</button>
-        <div id="heidrop-content" class="dropdown-menu">
-            <button onclick="setPlayer1(2, 'hei-drop', 'Ankle Biter', 1),hideDrop('heidrop-content')">Ankle Biter</button>
-            <button onclick="setPlayer1(4, 'hei-drop', 'Small Fry', 1),hideDrop('heidrop-content')">Small Fry</button>
-            <button onclick="setPlayer1(6, 'hei-drop', 'Average', 1),hideDrop('heidrop-content')">Average</button>
-            <button onclick="setPlayer1(8, 'hei-drop', 'Giant', 1),hideDrop('heidrop-content')">Giant</button>
-            <button onclick="setPlayer1(10, 'hei-drop', 'Behemoth', 1),hideDrop('heidrop-content')">Behemoth</button>
+        <div class="droppermenu">
+            <button id="bui-drop" class="dropbutton" onclick="showDrop('buidrop-content')">Click me</button>
+            <div id="buidrop-content" class="dropdown-menu">
+                <button onclick="setPlayer1(2, 'bui-drop', 'Skeleton', 2),hideDrop('buidrop-content')">Skeleton</button>
+                <button onclick="setPlayer1(4, 'bui-drop', 'Dad Bod', 2),hideDrop('buidrop-content')">Dad Bod</button>
+                <button onclick="setPlayer1(6, 'bui-drop', 'Fit', 2),hideDrop('buidrop-content')">Fit</button>
+                <button onclick="setPlayer1(8, 'bui-drop', 'Massive', 2),hideDrop('buidrop-content')">Massive</button>
+                <button onclick="setPlayer1(10, 'bui-drop', 'Juiced Hog', 2),hideDrop('buidrop-content')">Juiced Hog</button>
+            </div>
         </div>
-    </div>
-    <div class="build">
-        <H1>Body Type</H1>
-        <button id="bui-drop" class="dropbutton" onclick="showDrop('buidrop-content')">Click me</button>
-        <div id="buidrop-content" class="dropdown-menu">
-            <button onclick="setPlayer1(2, 'bui-drop', 'Skeleton', 2),hideDrop('buidrop-content')">Skeleton</button>
-            <button onclick="setPlayer1(4, 'bui-drop', 'Dad Bod', 2),hideDrop('buidrop-content')">Dad Bod</button>
-            <button onclick="setPlayer1(6, 'bui-drop', 'Fit', 2),hideDrop('buidrop-content')">Fit</button>
-            <button onclick="setPlayer1(8, 'bui-drop', 'Massive', 2),hideDrop('buidrop-content')">Massive</button>
-            <button onclick="setPlayer1(10, 'bui-drop', 'Juiced Hog', 2),hideDrop('buidrop-content')">Juiced Hog</button>
+        <div class="droppermenu">
+            <button id="pow-drop" class="dropbutton" onclick="showDrop('powdrop-content')">Click me</button>
+            <div id="powdrop-content" class="dropdown-menu">
+                <button onclick="setPlayer1(2, 'pow-drop', 'Pool Noodle', 3),hideDrop('powdrop-content')">Pool Noodle</button>
+                <button onclick="setPlayer1(4, 'pow-drop', 'Razer Scooter', 3),hideDrop('powdrop-content')">Razer Scooter</button>
+                <button onclick="setPlayer1(6, 'pow-drop', 'Average', 3),hideDrop('powdrop-content')">Average</button>
+                <button onclick="setPlayer1(8, 'pow-drop', 'Ford F350', 3),hideDrop('powdrop-content')">Ford F350</button>
+                <button onclick="setPlayer1(10, 'pow-drop', 'Thanos Snap', 3),hideDrop('powdrop-content')">Thanos Snap</button>
+            </div>
         </div>
-    </div>
-    <div class="power">
-        <H1>Striking Power</H1>
-        <button id="pow-drop" class="dropbutton" onclick="showDrop('powdrop-content')">Click me</button>
-        <div id="powdrop-content" class="dropdown-menu">
-            <button onclick="setPlayer1(2, 'pow-drop', 'Pool Noodle', 3),hideDrop('powdrop-content')">Pool Noodle</button>
-            <button onclick="setPlayer1(4, 'pow-drop', 'Razer Scooter', 3),hideDrop('powdrop-content')">Razer Scooter</button>
-            <button onclick="setPlayer1(6, 'pow-drop', 'Average', 3),hideDrop('powdrop-content')">Average</button>
-            <button onclick="setPlayer1(8, 'pow-drop', 'Ford F350', 3),hideDrop('powdrop-content')">Ford F350</button>
-            <button onclick="setPlayer1(10, 'pow-drop', 'Thanos Snap', 3),hideDrop('powdrop-content')">Thanos Snap</button>
+        <div class="droppermenu">
+            <button id="chi-drop" class="dropbutton" onclick="showDrop('chidrop-content')">Click me</button>
+            <div id="chidrop-content" class="dropdown-menu">
+                <button onclick="setPlayer1(2, 'chi-drop', 'Glass', 4),hideDrop('chidrop-content')">Glass</button>
+                <button onclick="setPlayer1(4, 'chi-drop', 'CardBoard', 4),hideDrop('chidrop-content')">CardBoard</button>
+                <button onclick="setPlayer1(6, 'chi-drop', 'Wood', 4),hideDrop('chidrop-content')">Wood</button>
+                <button onclick="setPlayer1(8, 'chi-drop', 'Steel', 4),hideDrop('chidrop-content')">Steel</button>
+                <button onclick="setPlayer1(10, 'chi-drop', 'Crimson Chin', 4),hideDrop('chidrop-content')">Crimson Chin</button>
+            </div>
         </div>
-    </div>
-    <div class="chin">
-        <H1>Chin Material</H1>
-        <button id="chi-drop" class="dropbutton" onclick="showDrop('chidrop-content')">Click me</button>
-        <div id="chidrop-content" class="dropdown-menu">
-            <button onclick="setPlayer1(2, 'chi-drop', 'Glass', 4),hideDrop('chidrop-content')">Glass</button>
-            <button onclick="setPlayer1(4, 'chi-drop', 'CardBoard', 4),hideDrop('chidrop-content')">CardBoard</button>
-            <button onclick="setPlayer1(6, 'chi-drop', 'Wood', 4),hideDrop('chidrop-content')">Wood</button>
-            <button onclick="setPlayer1(8, 'chi-drop', 'Steel', 4),hideDrop('chidrop-content')">Steel</button>
-            <button onclick="setPlayer1(10, 'chi-drop', 'Crimson Chin', 4),hideDrop('chidrop-content')">Crimson Chin</button>
-        </div>
-    </div>
-    <div class="submission">
-        <H1>Submission Threat</H1>
-        <button id="sub-drop" class="dropbutton" onclick="showDrop('subdrop-content')">Click me</button>
-        <div id="subdrop-content" class="dropdown-menu">
-            <button onclick="setPlayer1(2, 'sub-drop', 'T-rex Limbs', 5),hideDrop('subdrop-content')">T-rex Limbs</button>
-            <button onclick="setPlayer1(4, 'sub-drop', 'Watches Joe Rogan', 5),hideDrop('subdrop-content')">Watches Joe Rogan</button>
-            <button onclick="setPlayer1(6, 'sub-drop', 'Ankle Snapper', 5),hideDrop('subdrop-content')">Ankle Snapper</button>
-            <button onclick="setPlayer1(8, 'sub-drop', 'Monkey Backpack', 5),hideDrop('subdrop-content')">Monkey Backpack</button>
-            <button onclick="setPlayer1(10, 'sub-drop', 'Mom From Incredibles', 5),hideDrop('subdrop-content')">Mom From Incredibles</button>
+        <div class="droppermenu">
+            <button id="sub-drop" class="dropbutton" onclick="showDrop('subdrop-content')">Click me</button>
+            <div id="subdrop-content" class="dropdown-menu">
+                <button onclick="setPlayer1(2, 'sub-drop', 'T-rex Limbs', 5),hideDrop('subdrop-content')">T-rex Limbs</button>
+                <button onclick="setPlayer1(4, 'sub-drop', 'Watches Joe Rogan', 5),hideDrop('subdrop-content')">Watches Joe Rogan</button>
+                <button onclick="setPlayer1(6, 'sub-drop', 'Ankle Snapper', 5),hideDrop('subdrop-content')">Ankle Snapper</button>
+                <button onclick="setPlayer1(8, 'sub-drop', 'Monkey Backpack', 5),hideDrop('subdrop-content')">Monkey Backpack</button>
+                <button onclick="setPlayer1(10, 'sub-drop', 'Mom From Incredibles', 5),hideDrop('subdrop-content')">Mom From Incredibles</button>
+            </div>
         </div>
     </div>
 </div>
 <div class="fightButton">
-    <button onclick="faceOff()">FIGHT!</button>
+    <button onclick="displayWinner('winnermessage')">FIGHT!</button>
 </div>
+<div class="winner"><h1 id="winnermessage"></h1></div>
     <script src="logic.js"></script>
 </body>
 </html>
